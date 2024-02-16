@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="editor" contenteditable="true"></div>
+    <center><div id="toolbar">
+        
+        <button onclick="formatText('bold')"><h3>Bold</h3></button>
+        <button onclick="formatText('italic')"><h3>Italic</h3></button>
+        <button onclick="formatText('underline')"><h3>Underline</h3></button>
+        <button onclick="saveFile()"><h3>Save</h3></button>
+        <button onclick="loadFile()"><h3>Load</h3></button>
+        <span id="wordCount"><h3>Word Count: 0</h3></span>
+    </div>
+</center>
+<center>
+<footer>
+    <p>Copyright © 2023 <spa>Nagesh Kharat</spa>. All Rights Reserved.</p>
+</footer>
+</center>
+
+    <script src="script.js"></script>
+</body>
+</html>
