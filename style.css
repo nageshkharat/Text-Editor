@@ -2,6 +2,15 @@
     background-image: url(./save.gif);
     background-size: cover;
 } */
+
+h1{
+    color: white;
+    background-color: #0b0606;
+    width: 170px;
+}
+sp{
+    color:rgb(47, 165, 173);
+}
 body {
     background-image: url(./save.gif);
     background-size: cover;
@@ -11,7 +20,7 @@ body {
 
 #editor {
     background-color: white;
-    margin-top: 100px;
+    margin-top: 10px;
     /*margin-bottom: 20px;
     margin-left: 350px;
     margin-right: 50px; */
@@ -38,6 +47,8 @@ button {
     border-color: blueviolet;
     border-radius: 10px;
     margin-right: 5px;
+    cursor: pointer;
+
 }
 
 footer{
@@ -61,6 +72,35 @@ spa{
     /* border-radius: 8px; */
  }
 
- div{
+ /* ***************************************************** */
+ header {
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+    width: 70px;
+    height: 140px;
+    
+    
+}
 
- }
+#menu-toggle {
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    color: white;
+    margin-right: 15px;
+}
+
