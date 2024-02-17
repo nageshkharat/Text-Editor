@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <center><h1>Text <sp>Editor</sp></h1></center>
+    <header>
+        <div id="menu-toggle" onclick="toggleMenu()">&#9776; Menu</div>
+        <nav id="menu">
+            <ul>
+                <li><a href="Description.html" onclick="scrollToSection('description')">Description</a></li>
+                <li><a href="Features.html" onclick="scrollToSection('features')">Features</a></li>
+                <li><a href="Use.html" onclick="scrollToSection('how-to-use')">Use</a></li>
+                <li><a href="Contact.html" onclick="scrollToSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     
     <div id="editor" contenteditable="true"></div>
     <center><div id="toolbar">
@@ -26,5 +38,17 @@
 </center>
 
     <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        }
+
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+            toggleMenu();
+        }
+    </script>
 </body>
 </html>
