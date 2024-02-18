@@ -6,6 +6,9 @@
 h1{
     color: white;
     background-color: #0b0606;
+    border: solid white 5px;
+    border-radius: 20px;
+    
     width: 170px;
 }
 sp{
